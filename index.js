@@ -80,7 +80,7 @@ function resolveAuthorizationHeader(opts) {
     var scheme = parts[0];
     var credentials = parts[1];
 
-    if (/^Bearer$/i.test(scheme)) {
+    if (/Bearer$/i.test(scheme)) {
       return credentials;
     }
   } else {
